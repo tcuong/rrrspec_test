@@ -30,7 +30,7 @@ RRRSpec.configure(:client) do |config|
   end
 
   config.setup_command = <<-SETUP
-    
+    bundle install --path vendor/bundle
   SETUP
 
   config.slave_command = <<-SLAVE
