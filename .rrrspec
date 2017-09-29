@@ -30,9 +30,7 @@ RRRSpec.configure(:client) do |config|
   end
 
   config.setup_command = <<-SETUP
-    Dir.chdir(config.packaging_dir) do
-      Dir['spec/**{,/*/**}/*_spec.rb'].uniq
-    end
+    bundle install
   SETUP
 
   config.slave_command = <<-SLAVE
