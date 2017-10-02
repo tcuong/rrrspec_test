@@ -1,5 +1,0 @@
-require 'rrrspec'
-require 'rrrspec/client/configuration'
-require 'rrrspec/client/rspec_runner'
-require 'rrrspec/client/slave_runner'
-require 'rrrspec/client/support'
