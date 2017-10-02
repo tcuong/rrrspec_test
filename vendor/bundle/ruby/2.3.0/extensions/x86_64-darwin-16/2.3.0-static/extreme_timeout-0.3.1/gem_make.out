@@ -1,0 +1,20 @@
+current directory: /Users/a170937/Rails/test_rrrspec/vendor/bundle/ruby/2.3.0/gems/extreme_timeout-0.3.1/ext/extreme_timeout
+/Users/a170937/.rbenv/versions/2.3.4/bin/ruby -r ./siteconf20170930-25265-1fumf3g.rb extconf.rb
+checking for backtrace() in execinfo.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/a170937/Rails/test_rrrspec/vendor/bundle/ruby/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/extreme_timeout-0.3.1/mkmf.log
+
+current directory: /Users/a170937/Rails/test_rrrspec/vendor/bundle/ruby/2.3.0/gems/extreme_timeout-0.3.1/ext/extreme_timeout
+make "DESTDIR=" clean
+
+current directory: /Users/a170937/Rails/test_rrrspec/vendor/bundle/ruby/2.3.0/gems/extreme_timeout-0.3.1/ext/extreme_timeout
+make "DESTDIR="
+compiling extreme_timeout.c
+linking shared-object extreme_timeout.bundle
+
+current directory: /Users/a170937/Rails/test_rrrspec/vendor/bundle/ruby/2.3.0/gems/extreme_timeout-0.3.1/ext/extreme_timeout
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 extreme_timeout.bundle ./.gem.20170930-25265-11ay2b6
