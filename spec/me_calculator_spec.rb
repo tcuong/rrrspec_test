@@ -1,3 +1,4 @@
+require "spec_helper"
 require "me_calculator"
 
 describe MeCalculator do
