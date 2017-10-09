@@ -20,4 +20,4 @@ Current (2017/10/09) version of rrrspec only support rspec ~3.4.0.
 7. Connect by console:
 RRRSPEC_ENV=staging RRRSPEC_HOST=http://52.220.14.30 RRRSPEC_REDIS_HOST=stg-rrrspec.cbdqrp.0001.apse1.cache.amazonaws.com RRRSPEC_CONFIG_FILES=/srv/www/rrrspec/current/config/master.rb bundle console
 RRRSpec.setup(RRRSpec::Server::ServerConfiguration.new, [])
-          ActiveRecord::Base.establish_connection(**RRRSpec.configuration.persistence_db) 
+ActiveRecord::Base.establish_connection(**RRRSpec.configuration.persistence_db) 
