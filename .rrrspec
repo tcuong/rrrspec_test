@@ -39,7 +39,7 @@ RRRSpec.configure(:client) do |config|
 
   config.taskset_class = %x(basename `pwd`).strip
   config.worker_type = 'default'
-  config.max_workers = 1
+  config.max_workers = 3
   config.max_trials = 3
   config.unknown_spec_timeout_sec = 1 * 60
   config.least_timeout_sec = 60
