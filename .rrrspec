@@ -41,6 +41,6 @@ RRRSpec.configure(:client) do |config|
   config.worker_type = 'default'
   config.max_workers = 1
   config.max_trials = 3
-  config.unknown_spec_timeout_sec = 15 * 60
+  config.unknown_spec_timeout_sec = 1 * 60
   config.least_timeout_sec = 60
 end
