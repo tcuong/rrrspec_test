@@ -7,3 +7,7 @@ cd /srv/www/rrrspec/current && /usr/local/bin/bundle exec unicorn_rails --env st
 
 3. Make sure to kill all rrrspec related process:
 kill $(ps aux | grep 'rrr' | awk '{print $2}')
+
+4. Trouble:
+Currently, the status of PR is updated when success but not when failed.
+If test is failed, rrrspec run slave seems to retry it multiple times.
