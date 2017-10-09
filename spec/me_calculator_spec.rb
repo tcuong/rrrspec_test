@@ -6,6 +6,10 @@ describe MeCalculator do
 		context "given an empty me" do
 			it "returns zero" do
 				expect(MeCalculator.add("")).to eql(0)
+      end
+
+			it "returns zero" do
+				expect(MeCalculator.add("")).to eql(1)
 			end
 		end
 	end
