@@ -11,3 +11,6 @@ kill $(ps aux | grep 'rrr' | awk '{print $2}')
 4. Trouble:
 Currently, the status of PR is updated when success but not when failed.
 If test is failed, rrrspec run slave seems to retry it multiple times.
+
+5. Attention:
+Current (2017/10/09) version of rrrspec only support rspec ~3.4.0.
