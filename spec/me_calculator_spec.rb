@@ -7,10 +7,6 @@ describe MeCalculator do
 			it "returns zero" do
 				expect(MeCalculator.add("")).to eql(0)
       end
-
-			it "returns 1 " do
-				expect(MeCalculator.add("")).to eql(1)
-			end
 		end
 	end
 end
