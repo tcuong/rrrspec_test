@@ -30,9 +30,7 @@ RRRSpec.configure(:client) do |config|
   end
 
   config.setup_command = <<-SETUP
-    Dir.chdir(conf.packaging_dir) do
-      Dir['spec/**{,/*/**}/*_spec.rb'].uniq
-    end
+    bundle check --path=../vendor/bundler || bundle install --path=../vendor/bundler --jobs=4 --retry=3
   SETUP
 
   config.slave_command = <<-SLAVE
@@ -41,8 +39,8 @@ RRRSpec.configure(:client) do |config|
 
   config.taskset_class = %x(basename `pwd`).strip
   config.worker_type = 'default'
-  config.max_workers = 12
-  config.max_trials = 3
-  config.unknown_spec_timeout_sec = 15 * 60
+  config.max_workers = 3
+  config.max_trials = 1
+  config.unknown_spec_timeout_sec = 1 * 60
   config.least_timeout_sec = 60
 end
